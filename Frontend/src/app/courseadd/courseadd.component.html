@@ -1,0 +1,87 @@
+<div class="container spacer" >
+  <div class="card card-title" *ngIf="mode==1">
+    <div class="card-header"></div>
+
+    <div class="card-body">
+
+      <div>
+        <div class="form-group">
+          <label class="col-form-label" >Title </label>
+          <input class="form-control" type="text" placeholder="Course title.." [(ngModel)]="course.title">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Description</label>
+          <input class="form-control" type="text" placeholder="Course description.."  style="height:200px" [(ngModel)]="course.description">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Level </label>
+          <input class="form-control" type="text" placeholder="Course level.." [(ngModel)]="course.level">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Id Youtube </label>
+          <input class="form-control" type="text" placeholder="Course YT Id.." [(ngModel)]="course.link">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Src Pdf </label>
+          <input class="form-control" type="text" placeholder="Course src Pdf.."[(ngModel)]="course.category">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Src Image </label>
+          <input class="form-control" type="text" placeholder="Course src Image.."[(ngModel)]="course.imgsrc">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Src Quiz </label>
+          <input class="form-control" type="text" placeholder="Course src Quiz.."[(ngModel)]="course.quizsrc">
+        </div>
+
+
+        <button class="btn btn-outline-success" (click)="saveCourse()">Save</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card card-title" *ngIf="mode==2">
+    <div class="card-header"> Confirmation</div>
+
+    <div class="card-body">
+
+      <div>
+        <div class="form-group">
+          <label class="col-form-label" >Title </label>
+          <label>{{course.title}}</label>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Description </label>
+          <label>{{course.description}}</label>
+        </div>
+
+        <div class="form-group">
+          <label class="col-form-label" >Level </label>
+          <label>{{course.level}}</label>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Id Youtube </label>
+          <label>{{course.link}}</label>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Src Pdf </label>
+          <label>{{course.category}}</label>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Src Image </label>
+          <label>{{course.imgsrc}}</label>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" >Src Quiz </label>
+          <label>{{course.quizsrc}}</label>
+        </div>
+
+
+        <button class="btn btn-outline-success " (click)="mode=1">New Course</button>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<mat-toolbar color="primary" xmlns="http://www.w3.org/1999/html">
+  <mat-toolbar-row>
+    <span><img src="./assets/sfm.png"></span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="example-spacer"></span>
+
+    <div *ngIf="!Auth()">
+      <button mat-button  routerLink="courses">Courses</button>
+
+      <button mat-button  routerLink="login">Login</button>
+
+    </div>
+    <div *ngIf="Auth()">
+      <button mat-button  routerLink="profil">Profile</button>
+      <button mat-button  routerLink="courses">Courses</button>
+    </div>
+
+    <div *ngIf="Auth()">
+    <div *ngIf="Student()">
+      <button mat-button  routerLink="favourite">Favourite Courses</button>
+    </div>
+    </div>
+
+
+    <div *ngIf="Auth()">
+
+      <div *ngIf="Teacher()||Admin()">
+      <button  mat-button  routerLink="addcourse">Add Course</button>
+    <button   mat-button  routerLink="user">Users</button>
+      </div>
+    </div>
+
+    <button *ngIf="Auth()"  mat-button  routerLink="chat">chat with others</button>
+
+    <button mat-button>About</button>
+
+    <button *ngIf="Auth()" mat-button routerLink="contact">Contact</button>
+    <div *ngIf="Auth()" >
+    <button mat-button (click)="logout()">Logout</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

@@ -1,0 +1,56 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="well well-sm">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img class=" img-fluid" src={{profil$.srcimg}} alt="" class="img-rounded img-responsive">
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <h4>
+              {{ profil$.username }}</h4>
+            <div class="desc">First Name:{{ profil$.nom }}</div>
+            <div class="desc"> Last Name:{{ profil$.prenom }}</div>
+            <small><cite title="San Francisco, USA">El Ghazela, TUN <i class="glyphicon glyphicon-map-marker">
+            </i></cite></small>
+            <p>
+              <i class="glyphicon glyphicon-envelope"></i>{{ profil$.email }}
+              <i class="glyphicon glyphicon-globe"></i><a href="http://www.jquery2dotnet.com">www.supcom.mincom.tn</a>
+              <br />
+            </p>
+            <!-- Split button -->
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html">90%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+              <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="skills js">65%</div>
+            </div>
+
+            <p>PHP</p>
+            <div class="container">
+              <div class="skills php">60%</div>
+            </div>
+            <p>Python</p>
+            <div class="container">
+              <div class="skills python">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

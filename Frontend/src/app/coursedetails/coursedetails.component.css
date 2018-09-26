@@ -1,0 +1,19 @@
+P { text-align: center }
+H2 { text-align: center }
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+div.spacer
+{
+  font-size: 0;
+  height: 200px;
+  line-height: 0;
+}

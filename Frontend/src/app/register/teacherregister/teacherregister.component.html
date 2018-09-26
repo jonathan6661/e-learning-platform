@@ -1,0 +1,50 @@
+<div class="image">
+  <mat-card-header class="example-card2">
+  </mat-card-header>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title >Register as Teacher</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+
+          <tr>
+            <td><mat-form-field class="example-full-width">
+              <input matInput placeholder="First name" [(ngModel)]="teacher.nom"  name="first name" required>
+            </mat-form-field></td>
+          </tr>
+
+          <tr>
+            <td><mat-form-field class="example-full-width">
+              <input matInput placeholder="Last name" [(ngModel)]="teacher.prenom"  name="last name" required>
+            </mat-form-field></td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Username" [(ngModel)]="teacher.username" name="username" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td><mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" [(ngModel)]="teacher.email" name="email" required>
+            </mat-form-field></td>
+          </tr>
+
+          <tr>
+            <td><mat-form-field class="example-full-width">
+              <input matInput placeholder="Password" [(ngModel)]="teacher.password" type="password" name="password" required>
+            </mat-form-field></td>
+          </tr>
+        </table>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="saveTeacher()" color="primary">Register</button>
+
+      <button mat-raised-button (click)="gotoPage()" color="primary">Back</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
